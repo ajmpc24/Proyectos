@@ -1,0 +1,100 @@
+.container {
+    display: flex;
+    width: 1365px;
+    height: 663px;
+    background-color: #191919;
+    margin-left: auto;
+    margin-right: auto;
+    --shadow: #fff;
+    font-family: 'Bellota', cursive;
+}
+
+* {
+    --bg: #191919;
+    --shadowLg: rgba(13, 39, 80, .26);
+    --shadow: #fff;
+}
+
+.clockdate {
+    position: relative;
+    min-height: auto;
+    background: var(--bg);
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+body,
+span:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+span {
+    display: block;
+    font-weight: 100;
+    text-align: center;
+    color: #fff;
+}
+
+span:nth-child(1) {
+    position: relative;
+    width: 600px;
+    line-height: 250px;
+    border-radius: 150px;
+    font-size: 150px;
+    box-shadow: -15px -15px 15px var(--shadowLg),
+        15px 15px 15px var(--shadow),
+        inset -15px -15px 15px var(--shadowLg),
+        inset 15px 15px 15px var(--shadow);
+    color: #fff;
+    border: 5px solid transparent;
+}
+
+span:nth-child(2) {
+    padding-top: 25px;
+    line-height: 70px;
+    font-size: 25px;
+}
+
+.social-icons {
+    position: absolute;
+    width: 1300px;
+    height: 80px;
+    bottom: 130px;
+    display: flex;
+    justify-content: center;
+    left: 55px;
+    text-decoration: none;
+}
+
+.social-icons li {
+    margin: 0 60px;
+    list-style: none;
+}
+
+.social-icons li a{
+    font-size: 45px;
+    text-shadow: 0 0 0px;
+    transition: 0.3 ease;
+    list-style: none;
+    text-decoration: none;
+}
+
+.social-icons li a:hover {
+    text-shadow: 0 0 20px;
+}
+
+footer{
+    position: absolute;
+    right: 500px;
+    bottom: 25px;
+}
+
+h2{
+    font-size: larger;
+}

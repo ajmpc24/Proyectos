@@ -1,0 +1,302 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?8ss4u6');
+    src: url('fonts/icomoon.eot?8ss4u6#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?8ss4u6') format('truetype'),
+        url('fonts/icomoon.woff?8ss4u6') format('woff'),
+        url('fonts/icomoon.svg?8ss4u6#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak-as: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-more-vertical:before {
+    content: "\e905";
+}
+
+.icon-facebook:before {
+    content: "\e900";
+    color: #1877f2;
+}
+
+.icon-github:before {
+    content: "\e901";
+}
+
+.icon-instagram:before {
+    content: "\e902";
+    color: #e4405f;
+}
+
+.icon-linkedin:before {
+    content: "\e903";
+    color: #0077b5;
+}
+
+.icon-gorjeo:before {
+    content: "\e904";
+    color: #1da1f2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0b151b;
+}
+
+.clock {
+    position: relative;
+    top: -60px;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/clock.png);
+    background-size: cover;
+    border: 4px solid #023b4e;
+    border-radius: 30%;
+    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+        inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+        0 15px 15px rgba(0, 0, 0, 0.3),
+        inset 0 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.clock:before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 10000;
+}
+
+.clock .hour,
+.clock .min,
+.clock .sec {
+    position: absolute;
+
+}
+
+.clock .hour,
+.hr {
+    width: 160px;
+    height: 160px;
+}
+
+.clock .min,
+.mn {
+    width: 190px;
+    height: 190px;
+}
+
+.clock .sec,
+.sc {
+    width: 230px;
+    height: 230px;
+}
+
+.hr,
+.mn,
+.sc {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hr:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: #ff105e;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+.mn:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: #fff;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+
+.sc:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: #008eff;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+}
+
+/* modo oscuro */
+
+body.light {
+    background: #d1dae3;
+}
+
+body.light .clock {
+    background: #d1dae3 url(img/clock.png);
+    background-size: cover;
+    border: 4px solid#cad3dc;
+    box-shadow: -8 -8px 15px rgba(255, 255, 255, 0.05),
+        inset 10px 10px 10px rgba(0, 0, 0, 0.01),
+        -8 -8px 15px rgba(255, 255, 255, 0.5),
+        inset 20px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+body.light .hr :before {
+    background: #ff105e;
+}
+
+body.light .mn::before {
+    background: #091921;
+}
+
+body.light .sc:before {
+    background: #008eff;
+}
+
+.toggle {
+    top: 30px;
+    right: 150px;
+    width: 80px;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 4px solid #023b4e;
+    border-radius: 30%;
+    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+        inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+        0 15px 15px rgba(0, 0, 0, 0.3),
+        inset 0 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.toggle :before {
+    position: absolute;
+    content: 'light Mode';
+    left: 25px;
+    white-space: nowrap;
+}
+
+.toggleClass {
+    position: absolute;
+    top: 30px;
+    right: 150px;
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    border-radius: 50%;
+    background: #d1dae3;
+    font-family: consolas;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.toggleClass :before {
+    position: absolute;
+    content: 'Light Mode';
+    left: 15px;
+    top: 20px;
+    white-space: nowrap;
+    color: #d1dae3;
+}
+
+body.light .toggleClass,
+.redes a {
+    background: #091921;
+    color: #d1dae3;
+}
+
+body.light .toggleClass :before,
+.redes a :before {
+    content: 'Dark Mode';
+    color: #091921;
+}
+
+/* pie de pagina */
+footer {
+    position: absolute;
+    right: 500px;
+    bottom: 25px;
+}
+
+footer p {
+    position: relative;
+    font-size: 20px;
+    color: orangered;
+    left: 150px;
+    bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: consolas;
+}
+
+/* redes sociales */
+#more-vertical {
+    display: none;
+}
+
+.container {
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+}
+
+.redes a,
+.icon-more-vertical {
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    margin-bottom: 15px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 -5px 5px rgba(255, 255, 255, 0.05),
+        inset 0 -5px 5px rgba(255, 255, 255, 0.05),
+        0 5px 5px rgba(0, 0, 0, 0.3),
+        inset 0 1px 1px rgba(0, 0, 0, 0.3);
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.redes a:hover {
+    background: #fff;
+    opacity: 2;
+}
