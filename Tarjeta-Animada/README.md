@@ -18,7 +18,8 @@ https://www.figma.com/file/p2TNouTrFtVGNjEKrcSk4m/Tarjeta-Animada?type=design&no
 ## Instalación y configuración
 
 1. Clona este repositorio en tu equipo utilizando el siguiente comando en tu
-   terminal: git clone https://github.com/ajmpc24/Proyectos.git
+   terminal: git clone
+   https://github.com/ajmpc24/Proyectos/tree/main/Tarjeta-Animada
 2. Navega hasta la carpeta "Tarjeta-Animada" dentro del repositorio clonado.
 3. Abre el archivo index.html en tu navegador.
 
