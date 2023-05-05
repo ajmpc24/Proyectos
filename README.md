@@ -3,7 +3,7 @@ Proyectos - Practicas
 
 ## Proyectos
 
-- [Proyecto 1](./proyecto1/README.md)
+- [Proyecto Tarjeta-Animada](./Tarjeta-Animada/README.md)
 - [Proyecto 2](./proyecto2/README.md)
 
 ## Contribuciones
