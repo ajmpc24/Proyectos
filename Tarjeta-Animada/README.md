@@ -6,7 +6,11 @@ animado y una imagen de crema de manos.
 
 ## Demo
 
-Aquí puedes ver un mockup de la tarjeta en Figma:
+### Netlify
+
+[Demo] https://timely-tulumba-e39762.netlify.app/
+
+### Figma
 
 [Demo]
 https://www.figma.com/file/p2TNouTrFtVGNjEKrcSk4m/Tarjeta-Animada?type=design&node-id=0-1&t=Oj7q9bwQRbzR3zMe-0
