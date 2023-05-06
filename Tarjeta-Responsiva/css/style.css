@@ -4,6 +4,7 @@
 
 body {
   display: flex;
+  height: 640px;
   justify-content: center;
   align-items: center;
   background-color: #cbc5c5;
@@ -11,8 +12,6 @@ body {
 
 .card {
   display: flex;
-
-  justify-content: center;
   align-items: center;
   width: 75vw;
   max-width: 650px;
