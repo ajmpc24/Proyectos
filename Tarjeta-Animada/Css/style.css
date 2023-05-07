@@ -84,13 +84,15 @@ body {
   background-color: #01bdb0;
 }
 
-.fa-solid {
-  font-size: 18px;
+.fa-regular {
+  margin-right: 2px;
+  color: #fff;
+  font-size: 32px;
   transition: transform 0.25s;
 }
 
-.product-card__button:hover .fa-solid,
-.product-card__button:focus .fa-solid {
+.product-card__button:hover .fa-regular,
+.product-card__button:focus .fa-regular {
   transform: rotate(1turn);
 }
 
@@ -105,7 +107,3 @@ body {
     transform: translateY(0);
   }
 }
-
-/* Pendiente btn en adelante */
-/* body color y tamaño */
-/* https://www.instagram.com/p/CrvuMQBgP_L/?igshid=YmMyMTA2M2Y%3D */
