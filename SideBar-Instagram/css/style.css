@@ -29,7 +29,7 @@ body {
   margin-bottom: 44px;
 }
 
-.logo-icon {
+.sidebar-header i {
   display: none;
   font-size: 28px;
   height: 35px;
@@ -140,7 +140,7 @@ body {
     display: none;
   }
 
-  .logo-icon {
+  .sidebar-header i {
     display: block;
   }
 

@@ -34,11 +34,20 @@ etc., para adaptar la barra lateral a tus necesidades.
 
 ## Contribuciones
 
-Las contribuciones son bienvenidas. Si deseas mejorar este proyecto, siéntete
-libre de realizar un fork y abrir una solicitud de extracción con tus mejoras.
+Las contribuciones son bienvenidas. Si deseas mejorar este proyecto, aquí hay
+algunas áreas en las que puedes colaborar:
 
-Licencia Este proyecto se distribuye bajo la Licencia MIT.
+- Implementar funcionalidades adicionales.
+- Mejorar el diseño y la apariencia de la barra lateral.
+- Optimizar el rendimiento del código.
+- Corregir errores o solucionar problemas conocidos.
 
-Puedes utilizar este ejemplo de README como punto de partida y ajustarlo según
-tus necesidades. Recuerda reemplazar el contenido y las secciones con la
-información correcta y agregar cualquier otro detalle que consideres relevante.
+Si tienes alguna idea creativa o mejora, no dudes en abrir un problema o una
+solicitud de extracción. Para ello, sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama para tu contribución.
+3. Realiza los cambios necesarios y realiza commits descriptivos.
+4. Envía una solicitud de extracción explicando tus cambios.
+
+¡Esperamos con interés tu valiosa contribución!
