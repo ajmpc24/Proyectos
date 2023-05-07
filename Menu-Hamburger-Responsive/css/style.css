@@ -6,3 +6,48 @@ body {
   background-repeat: no-repeat;
   background-position: 0% 0%;
 }
+
+.burger,
+.menu,
+.background {
+  position: fixed;
+}
+
+.burger {
+  z-index: 4;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 88px;
+  height: 88px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+bdoy .open .burger {
+  background-image: url(/img/montanas-en-patagonia-argentina-4273.png);
+}
+
+.background {
+  position: fixed;
+  z-index: 2;
+  top: 44px;
+  left: 44px;
+  aspect-ratio: 1/1;
+  translate: -50% -50%;
+  background: #07030a;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+body .open .background {
+  height: 300vh;
+  opacity: 0.8;
+}
+
+body .open .menu {
+  opacity: 1;
+  visibility: visible;
+}
