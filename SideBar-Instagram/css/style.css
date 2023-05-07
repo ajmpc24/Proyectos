@@ -29,7 +29,7 @@ body {
   margin-bottom: 44px;
 }
 
-.fa-brands {
+.logo-icon {
   display: none;
   font-size: 28px;
   height: 35px;
@@ -140,7 +140,7 @@ body {
     display: none;
   }
 
-  .fa-brands {
+  .logo-icon {
     display: block;
   }
 
