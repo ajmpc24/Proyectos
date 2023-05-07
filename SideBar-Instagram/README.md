@@ -15,7 +15,7 @@ navegación.
 Puedes ver una vista previa de la barra lateral en funcionamiento en el
 siguiente enlace de Netlify:
 
-[Ver vista previa en Netlify](https://nombre_de_tu_app_en_netlify.netlify.app)
+[Ver vista previa en Netlify](https://helpful-dasik-62ff01.netlify.app/)
 
 ## Uso
 
