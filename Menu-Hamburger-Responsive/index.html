@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,30 +15,24 @@
   <body>
 
     <!-- Menu burger -->
-    <button class="burger"
-      onclick="toggleMenu()"></button>
+    <button
+      class="burger"
+      onclick="toggleMenu()">
+    </button>
     <div class="background"></div>
-
     <!-- Menu -->
     <div class="menu">
-      <!-- About -->
       <nav>
-        <a style="animation: 0.2s"> Home </a>
-      </nav>
-      <nav>
-        <a style="animation: 0.2s"> About </a>
-      </nav>
-      <nav>
-        <a style="animation: 0.2s"> Porfolio </a>
-      </nav>
-      <nav>
-        <a style="animation: 0.2s"> Service </a>
-      </nav>
-      <nav>
-        <a style="animation: 0.2s"> Contact </a>
-      </nav>
-      <nav>
-        <a style="animation: 0.2s">About</a>
+        <!-- Home -->
+        <a style="animation-delay: 0.2s"> Home </a>
+        <!-- About -->
+        <a> About </a>
+        <!-- Porfolio -->
+        <a> Porfolio </a>
+        <!-- Service -->
+        <a> Service </a>
+        <!-- Contact -->
+        <a> Contact </a>
       </nav>
     </div>
 
@@ -48,6 +42,10 @@
       onclick="toggleMenu()"></button>
     <div class="background"></div> -->
     <!-- JavaScript -->
-    <script src="js/script.js"></script>
+    <script type="js/script.js"></script>
+    <!-- 
+    <script type="javaScript">
+    const toggleMenu = () => document.body.classList.toggle('open');
+  </script> -->
   </body>
 </html>

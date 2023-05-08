@@ -1,7 +1,11 @@
+html,
 body {
   height: 100%;
+}
+
+body {
   font-family: 'Grand Hotel', cursive;
-  background-image: url(/img/montanas-en-patagonia-argentina-4273.png);
+  background-image: url("/img/montanas-en-patagonia-argentina-4273.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% 0%;
@@ -21,12 +25,13 @@ body {
   place-items: center;
   width: 88px;
   height: 88px;
+  background-image: url("/img/burgerMenu.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-bdoy .open .burger {
-  background-image: url(/img/montanas-en-patagonia-argentina-4273.png);
+body .open .burger {
+  background-image: url("/img/burgerClose.png");
 }
 
 .background {
@@ -36,6 +41,7 @@ bdoy .open .burger {
   left: 44px;
   aspect-ratio: 1/1;
   translate: -50% -50%;
+  height: 88px;
   background: #07030a;
   border-radius: 50%;
   opacity: 0;
@@ -50,4 +56,77 @@ body .open .background {
 body .open .menu {
   opacity: 1;
   visibility: visible;
+}
+
+.menu {
+  z-index: 3;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+}
+
+body .menu nav:hover>a {
+  opacity: 0.25;
+}
+
+body .menu nav:hover>a::hover {
+  opacity: 1;
+  translate: 8px 0;
+}
+
+.menu nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 100px;
+}
+
+.menu a {
+  position: relative;
+  color: #f9f9f9;
+  font-size: 32px;
+  padding: 20px 0 20px 20px;
+  text-decoration: none;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -26px;
+  translate: 0 -50%;
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+  opacity: 0;
+  rotate: 45deg;
+  transition: 0.3s;
+}
+
+.menu a:hover::after {
+  opacity: 1;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    translate: -30px 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+body .open .menu a {
+  opacity: 1;
+  animation: appear 0.35s backwards;
 }
