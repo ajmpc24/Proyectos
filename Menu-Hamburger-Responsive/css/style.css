@@ -9,6 +9,7 @@
   position: relative;
   background: url("../img/montanas-en-patagonia-argentina-4273.png") center no-repeat;
   background-size: cover;
+  filter: brightness(85%);
   height: 100vh;
   width: 100%;
 }
@@ -33,7 +34,7 @@
   position: absolute;
   color: #fff;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 200;
   left: 50px;
   text-decoration: none;
 }
@@ -45,6 +46,40 @@
 }
 
 .sidebar_menu .menu li {
-  margin-top: 6px;
-  padding: 14px 20px;
+  margin-top: 26px;
+  padding: 14px 40px;
+
+  transition: all 0.3s linear;
+}
+
+.sidebar_menu .menu a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.sidebar_menu .menu li:hover {
+  border-left: 1px solid #fff;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+}
+
+.sidebar_menu .social-media {
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.social-media i {
+  padding: 0 5px;
+  color: #fff;
+  opacity: 0.8;
+  font-size: 20px;
+  transition: all 0.2s linear;
+}
+
+.social-media i:hover {
+  opacity: 1;
 }
