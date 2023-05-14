@@ -18,6 +18,7 @@
   position: fixed;
   height: 100vh;
   width: 280px;
+  left: -280px;
   /* BG GLASSMORPHISM  */
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
@@ -34,8 +35,9 @@
   position: absolute;
   color: #fff;
   font-size: 25px;
-  font-weight: 200;
-  left: 50px;
+  font-weight: 500;
+  left: 70px;
+  line-height: 58px;
   text-decoration: none;
 }
 
@@ -48,7 +50,6 @@
 .sidebar_menu .menu li {
   margin-top: 26px;
   padding: 14px 40px;
-
   transition: all 0.3s linear;
 }
 
@@ -66,6 +67,9 @@
 
 .sidebar_menu .social-media {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   left: 50%;
   bottom: 60px;
   transform: translateX(-50%);
@@ -73,13 +77,60 @@
 }
 
 .social-media i {
-  padding: 0 5px;
+  padding: 0 15px;
   color: #fff;
-  opacity: 0.8;
-  font-size: 20px;
+  opacity: 1;
+  font-size: 28px;
   transition: all 0.2s linear;
 }
 
 .social-media i:hover {
+  opacity: 1;
+}
+
+#check {
+  display: none;
+}
+
+.main_box .btn_open i {
+  position: absolute;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  left: 16px;
+  line-height: 60px;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+
+.sidebar_menu .btn_close i {
+  position: absolute;
+  color: #fff;
+  font-size: 35px;
+  left: 16px;
+  line-height: 60px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.btn_open i:hover {
+  font-size: 32px;
+}
+
+.btn_close i:hover {
+  font-size: 32px;
+}
+
+#check:checked~.sidebar_menu {
+  left: 0px;
+}
+
+#check:checked~.btn_open i {
+  opacity: 0;
+}
+
+#check:checked~.sidebar_menu .btn_close i {
   opacity: 1;
 }
