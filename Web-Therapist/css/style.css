@@ -320,6 +320,33 @@ button:hover {
   color: #fff;
 }
 
+/* Mensaje form */
+
+#confirmation-message {
+  display: none;
+  /* position: absolute;
+  top: 30px; */
+  background-color: #4CAF50;
+  color: rgb(36, 35, 35);
+  padding: 10px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 20px;
+  /* Centra el texto en el mensaje */
+  margin-top: 10px;
+  /* Agrega espacio superior al mensaje */
+}
+
+#confirmation-message p {
+  position: relative;
+  margin: 0;
+  top: 110px;
+  right: -20px;
+  align-items: center;
+
+  text-align: center;
+}
+
 /* footer */
 .footer img {
   position: relative;

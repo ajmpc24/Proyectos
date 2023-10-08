@@ -95,7 +95,7 @@
                 alt="bg_parallax_1"
                 style="width: 200%" />
               <div class="carousel-item__details">
-                <h5 class="carousel-item__details--title"> Terapia Gestal</h5>
+                <h5 class="carousel-item__details--title"> Terapia Gestalt</h5>
               </div>
             </div>
 
@@ -161,7 +161,8 @@
       <section class="parallax section-4" id="section-5">
         <h2 class="title">Contacto</h2>
         <!-- fomrulario -->
-        <form>
+        <form id="contact-form" action="enviar_correo.php" method="POST">
+
           <label for="nombre">Nombre:</label>
           <input type="text" id="nombre" placeholder="Ingrese su nombre">
 
@@ -176,21 +177,30 @@
           <label for="mensaje">Mensaje:</label>
           <textarea id="mensaje" placeholder="Ingrese su mensaje"></textarea>
 
-          <button type="submit">Enviar</button>
+          <button type="submit" id="enviar">Enviar</button>
         </form>
+        <!-- MENSAJE ENVIADO OK -->
+        <div id="confirmation-message" style="display:none;">
+          <p>¡Mensaje enviado!</p>
+        </div>
       </section>
 
       <footer class="footer">
 
         <div class="content-footer">
           <div class="social-media">
-            <a href="#" class="tooltip" data-tooltip="Facebook">
+            <a href="https://www.facebook.com/" class="tooltip" target="_blank"
+              data-tooltip="Facebook">
               <i class="fa-brands fa-facebook"></i>
             </a>
-            <a href="#" class="tooltip" data-tooltip="Twitter">
+            <a
+              href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7Dhttps://twitter.com/?lang=es"
+              class="tooltip" target="_blank"
+              data-tooltip="Twitter">
               <i class="fa-brands fa-twitter"></i>
             </a>
-            <a href="#" class="tooltip" data-tooltip="Instagram">
+            <a href="https://www.instagram.com/" class="tooltip" target="_blank"
+              data-tooltip="Instagram">
               <i class="fa-brands fa-instagram"></i>
             </a>
           </div>
