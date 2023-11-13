@@ -1,0 +1,249 @@
+/* LOGO */
+.home .image-text img {
+  position: absolute;
+  /* background-color: #000000; */
+  width: 125vh;
+  top: -180px;
+  left: -300px;
+  /* opacity: 0;
+  animation: deslizar 1.5s ease forwards;
+  transition: width 0.5s ease; */
+}
+
+/* LOGO EFECTO SHOW */
+/* @keyframes deslizar {
+  to {
+    opacity: 1;
+    top: -180px;
+  }
+} */
+.btn-more {
+  position: relative;
+  margin-top: 20px;
+  /* padding: 15px 15px; */
+  left: 100px;
+  /* border: 2px solid tomato; */
+}
+
+.btn-more a {
+  font-weight: 500;
+  color: #000000;
+  background-color: rgba(216, 216, 216, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10%;
+  height: 40px;
+  width: 80px;
+  cursor: pointer;
+  /* list-style: none; */
+  text-decoration: none;
+  /* width: 100px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* LOGO MODE DARK*/
+.image-dark {
+  display: none;
+}
+
+/* body.dark .image-text {
+  opacity: 0;
+} */
+
+body.dark .home .image-dark img {
+  width: 120vh;
+}
+
+body.dark .home .image-dark {
+  display: inline-block;
+  position: absolute;
+  top: -185px;
+  left: -300px;
+  /* animation: deslizar 1.5s ease forwards;
+  transition: width 0.5s ease; */
+}
+
+.home {
+  position: absolute;
+  top: 0;
+  top: 0;
+  left: 250px;
+  /* height: 100vh; */
+  margin: 0 20px;
+  padding-right: 48px;
+  /* width: 500px; */
+  width: calc(100% - 290px);
+  /* background-color: aquamarine; */
+  transition: var(--tran-05);
+}
+
+.home .text {
+  font-size: 30px;
+  /* font-weight: 500; */
+  color: var(--text-color);
+  padding: 12px 60px;
+}
+
+.sidebar.close~.home {
+  left: 78px;
+  height: 100vh;
+  width: calc(100% - 130px);
+  margin: 0 40px;
+}
+
+body.dark .home,
+body.dark i,
+body.dark .logo-text {
+  color: #ffffff;
+}
+
+/* TODAS LAS SECTIONES */
+.section {
+  /* background-color: bisque; */
+  width: auto;
+  margin: 10px;
+  margin-right: 80px;
+  padding: 30px 0;
+  text-align: justify;
+}
+
+/* SECTION - SHIRTS */
+.section-content {
+  height: 550px;
+  margin-top: 100px;
+  /* background-color: rgb(65, 186, 52); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.section-content .description {
+  flex: 1;
+  padding: 5px;
+  margin-right: 20px;
+  /* text-align: left; */
+  /* background-color: aquamarine; */
+}
+
+.section-content span,
+.section-content p {
+  text-align: justify;
+  margin-left: 100px;
+}
+
+.section-content span {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.section-content p {
+  padding-top: 20px;
+}
+
+.section-content .image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 50px; */
+  /* background-color: blueviolet; */
+}
+
+.section-content img {
+  width: 65%;
+}
+
+
+/* .section.section-2 {
+  background-color: rgb(13, 198, 136);
+}
+
+.section.section-3 {
+  background-color: rgb(22, 104, 74);
+}
+
+.section.section-4 {
+  background-color: rgb(51, 138, 109);
+} */
+
+
+/* Media query para hacer el logo más pequeño en dispositivos con ancho menor a 576px (por ejemplo, dispositivos móviles) */
+@media screen and (max-width: 878px) {
+
+  .home .image-text {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+  }
+
+  .home .image-text img {
+    width: 100vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .home .image-text {
+    position: absolute;
+    top: 160px;
+    left: 225px;
+    width: 40vh;
+  }
+
+  .home .image-text img,
+  body.dark .home .image-dark img {
+    width: 40vh;
+  }
+}
+
+/* RESPONSIVE SECTIONS */
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+
+  .home .image-text img {
+    position: absolute;
+    width: 85vh;
+    top: -150px;
+    left: -280px;
+  }
+
+  body.dark .home .image-dark img {
+    position: absolute;
+    width: 85vh;
+    top: 70px;
+    left: 80px;
+  }
+
+  .section-content {
+    flex-direction: column;
+    padding: 70px 0;
+    margin: 20px;
+  }
+
+  .section-content span {
+    font-size: 16px;
+  }
+
+  .section-content p {
+    font-size: 12px;
+  }
+
+  .section-content img {
+    width: 55%;
+    position: relative;
+    left: 40px;
+    padding: 10px 0;
+  }
+
+  .section.sweater {
+    padding-bottom: 10px;
+  }
+
+  .section.hoodie {
+    padding-top: 10px;
+
+  }
+}

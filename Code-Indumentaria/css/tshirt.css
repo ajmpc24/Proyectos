@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'sans-serif';
+}
+
+body {
+  font-size: 1.7rem;
+  font-family: 'Merriweather Sans', sans-serif;
+  background: #dce0e4;
+  color: #000000;
+  padding: 4rem;
+}
+
+h2 {
+  text-align: center;
+  /* margin-bottom: 5rem; */
+  padding-top: 120px;
+  margin-bottom: 30px;
+  font-size: 3.3rem;
+}
+
+.all-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  overflow: hidden;
+  background: var(--sidebar-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 240px;
+  height: 400px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.2rem;
+  margin: 1rem;
+}
+
+.product .product-title,
+.product .product-price {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.product .product-price {
+  font-weight: 500;
+}
+
+.product:hover img {
+  margin-top: 90px;
+  transform: scale(2.7);
+  transition: transform 0.4s ease-in;
+}
+
+
+.product:hover .product-title,
+.product:hover .product-price {
+  opacity: 0;
+}
+
+
+.product:hover .product-btn {
+  position: relative;
+  top: -30px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background: #dce0e4;
+  border: none !important;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); */
+}
+
+.product:hover {
+  box-shadow: 5px 5px 8px #eeeeee;
+}
+
+.product img {
+  height: 200px;
+  margin: 1rem;
+  transition: all 0.3s;
+}
+
+.product .product-btn:link,
+.product .product-btn:visited {
+  color: #000000;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #000000;
+  /* background: var(--sidebar-color); */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); */
+  padding: 0.3rem 1.4rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.product .product-btn:hover {
+  transform: scale(1.1);
+}
+
+body.dark .product .product-btn {
+  /* border-color: #eeeeee; */
+  color: #eeeeee;
+
+  border: 1px solid #eeeeee;
+  /* background: var(--sidebar-color); */
+}
+
+body.dark .product:hover .product-btn {
+  border: 1px solid #eeeeee !important;
+  /* color: #eeeeee;  */
+  background-color: transparent;
+}
+
+footer {
+  font-size: 1rem;
+}
+
+
+/* RESPONSIVE  */
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  h2 {
+    padding-top: 8.5rem;
+    font-size: 2rem;
+  }
+}
