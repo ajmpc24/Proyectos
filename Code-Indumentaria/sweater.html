@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/socialMedia.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/button.css">
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'
+      rel='stylesheet'>
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet">
+
+    <title>Sweaters</title>
+  </head>
+  <body>
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar close">
+      <header>
+
+        <!--  LOGO TEXT-->
+        <div class="text logo-text">
+          <span class="name"> Code </span>
+          <span class="profession"> Indumentaria</span>
+        </div>
+
+        <!--  BTN OPEN/CLOSE -->
+        <i class='bx bx-chevron-right toggle'></i>
+
+      </header>
+
+      <!-- MENU 1 -->
+      <div class="menu-bar">
+        <div class="menu">
+          <!-- ITEMS MENU #1 -->
+          <ul class="menu-links">
+
+            <!-- HOME ITEM MENU #1 -->
+            <li class="nav-link">
+              <a href="./index.html">
+                <img
+                  class='bx bx-home-alt icon'
+                  src="icons/home.png"
+                  alt="home">
+                <span class="text nav-text">Home</span>
+              </a>
+            </li>
+
+            <!-- TSHIRT ITEM MENU #1 -->
+            <li class="nav-link">
+              <a href="tshirt.html">
+                <img
+                  class='bx bx-home-alt icon'
+                  src="icons/tshirt.png"
+                  alt="tshirt">
+                <span class="text nav-text">T-Shirts</span>
+
+              </a>
+            </li>
+
+            <!-- SWEARTES ITEM MENU #1 -->
+            <li class="nav-link">
+              <a href="sweater.html">
+                <img
+                  class='bx bx-home-alt icon'
+                  src="icons/sweater.png"
+                  alt="sweater">
+                <span class="text nav-text">Sweaters</span>
+              </a>
+            </li>
+
+            <!-- HOODIES ITEMS MENU #1 -->
+            <li class="nav-link">
+              <a href="hoodie.html">
+                <img
+                  class='bx bx-home-alt icon'
+                  src="icons/hoodie.png"
+                  alt="hoodie">
+                <span class="text nav-text">Hoodies</span>
+              </a>
+            </li>
+
+            <!-- BEAINES ITEMS MENU #1 -->
+            <li class="nav-link">
+              <a href="beaine.html">
+                <img
+                  class='bx bx-home-alt icon'
+                  src="icons/beaine.png"
+                  alt="beaine">
+                <span class="text nav-text">Beaines</span>
+              </a>
+            </li>
+
+            <!-- LIKES ITEMS MENU #1 -->
+            <!-- <li class="nav-link">
+              <a href="#">
+                <img
+                  class='bx bx-home-alt icon'
+                  src="icons/heart.png"
+                  alt="beaine">
+                <span class="text nav-text">Likes</span>
+              </a>
+            </li> -->
+
+            <!-- WALLETS ITEMS MENU #1 -->
+            <!-- <li class="nav-link">
+              <a href="#">
+                <img
+                  class='bx bx-home-alt icon'
+                  src="icons/wallet.png"
+                  alt="beaine">
+                <span class="text nav-text">Wallets</span>
+              </a>
+            </li> -->
+
+          </ul>
+        </div>
+
+        <!-- MENU #2 -->
+        <div class="bottom-content">
+          <!-- LOGOUT ITEM MENU #2 -->
+          <!-- <li class>
+            <a href="#">
+              <img
+                class='bx bx-home-alt icon'
+                src="icons/logout.png"
+                alt="logout">
+              <span class="text nav-text">Logout</span>
+            </a>
+          </li> -->
+          <!-- ICON & TEXT DARK MODE ITEM MENU #2 -->
+          <li class="mode">
+            <div class="sun-moon">
+              <i class='bx bx-moon icon moon'></i>
+              <i class='bx bx-sun icon sun'></i>
+            </div>
+            <span class="mode-text text">Dark mode</span>
+            <!-- BTN DARK MODE ITEM MENU #2 -->
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+
+        </div>
+      </div>
+
+    </nav>
+
+    <!-- SEARCH BAR + SECTIONS + SOCIAL MEDIA -->
+    <div class="home">
+
+      <!--  LOGO -->
+      <div class="image-text">
+        <span class="image">
+          <img src="img/logo-black.png" alt="logo-black" id="logo-light">
+        </span>
+      </div>
+
+      <!--  LOGO DARK-->
+      <div class="image-dark">
+        <span>
+          <img src="img/logo-white.png" alt="logo-white" id="logo-dark">
+        </span>
+      </div>
+
+      <!-- SEARCH BAR  
+      <section class="section search" id="search-section">
+        <div class="container">
+          <form action="https://www.google.com/search" class="search"
+            id="search-bar">
+            <input type="search" placeholder="Type something..." name="q"
+              class="search__input">
+            <div class="search__button" id="search-button">
+              <i class="ri-search-2-line search__icon"></i>
+              <i class="ri-close-line search__close"></i>
+            </div>
+          </form>
+        </div>
+         ITEMS SHOPPING CAR & FAV
+        <div class="shopping-car">
+           ITEM FAV
+          <a href="#">
+            <i class='bx bx-heart'></i>
+          </a>
+           ITEM SHOPPING CAR 
+          <a href="#">
+            <i class='bx bx-cart'></i>
+          </a>
+        </div> 
+      </section> -->
+
+      <!-- CARDS PRODUCTS -->
+      <section class="products">
+        <h2>Sweaters</h2>
+
+        <div class="all-products">
+
+          <!-- COMENTADO TODOS LOS PRODUCTOS PORUQE TENGO LA LISTA CREADA EN JS  -->
+          <!-- <div class="product">
+            <img src="img/R-cloudCode_blue B.png">
+            <div class="product-info">
+              <h4 class="product-title"> ASCII </h4>
+              <p class="product-price">$3.700</p>
+              <a class="product-btn" href="#">BUY NOW</a>
+                           <a class="product-btn-like" href="#">
+                <i class='bx bx-heart'></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="img/R-nodeJS-03.png">
+            <div class="product-info">
+              <h4 class="product-title"> Node JS </h4>
+              <p class="product-price">$3.700</p>
+              <a class="product-btn" href="#">BUY NOW</a>
+              
+              <a class="product-btn-like" href="#">
+                <i class='bx bx-heart'></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="img/R-cloudCode_blue B.png">
+            <div class="product-info">
+              <h4 class="product-title"> Cloud Code </h4>
+              <p class="product-price">$3.700</p>
+              <a class="product-btn" href="#">BUY NOW</a>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="img/R-gitHub.png">
+            <div class="product-info">
+              <h4 class="product-title"> GitHub </h4>
+              <p class="product-price">$3.700</p>
+              <a class="product-btn" href="#">BUY NOW</a>
+            </div>
+          </div> -->
+
+        </div>
+
+        <!--  SOCIAL MEDIA -->
+        <div class="social-media">
+          <a href="https://www.facebook.com/"
+            class="social-link"
+            target="_blank">
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="https://twitter.com/home"
+            class="social-link"
+            target="_blank">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/code_indumentaria.arg/?theme=dark"
+            class="social-link"
+            target="_blank">
+            <i class="bx bxl-instagram"></i>
+          </a>
+
+        </div>
+        <!-- FOOTER -->
+        <footer>
+          <p>&copy; 2023 - Code Indumentaria</p>
+        </footer>
+
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="sweater.js"></script>
+
+  </body>
+
+</html>
